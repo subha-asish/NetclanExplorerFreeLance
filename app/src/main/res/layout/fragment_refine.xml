@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Refine"
+    android:padding="20dp"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SelectYourAvailability"
+        android:layout_marginBottom="7sp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/NevyBlue" />
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Select"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+<AutoCompleteTextView
+    android:id="@+id/auto_complete_txt"
+    android:inputType="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AddStatus"
+            android:layout_marginTop="20sp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/NevyBlue" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="250"
+            app:boxStrokeWidth="0dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="80dp"
+            android:hint="@string/Hii"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SelectHyperLocal"
+            android:layout_marginTop="5sp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/NevyBlue" />
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            >
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="1"
+                android:valueTo="100" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewStartValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 km"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/slider" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewEndValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 km"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/slider" />
+
+            <TextView
+                android:id="@+id/tooltipTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:padding="8dp"
+                android:background="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_alignTop="@id/slider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SelectPurposes"
+            android:layout_marginTop="20sp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/NevyBlue" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Coffee"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Business"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hobbies"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Friendship"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Movies"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dinning"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dating"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Matrimony"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_textview"/>
+
+    </LinearLayout>
+</LinearLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:background="@drawable/custom_textview"
+    android:text="@string/SaveExplore"
+    android:layout_gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

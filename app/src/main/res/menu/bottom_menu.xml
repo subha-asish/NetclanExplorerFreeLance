@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Refine"
+        android:title="Refine"
+        android:icon="@drawable/refine"/>
+    <item
+        android:id="@+id/Explore"
+        android:title="Explore"
+        android:icon="@drawable/view"
+        />
+    <item
+        android:id="@+id/Network"
+        android:title="Network"
+        android:icon="@drawable/connection"
+        />
+
+    <item
+        android:id="@+id/Chats"
+        android:title="Chats"
+        android:icon="@drawable/chatting" />
+    <item
+        android:id="@+id/Contacts"
+        android:title="Contacts"
+        android:icon="@drawable/contacts_book_icon" />
+</menu>
